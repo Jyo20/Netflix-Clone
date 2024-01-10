@@ -140,3 +140,77 @@ h4 {
 #middleBox > div > button:hover {
   background-color: rgb(182, 28, 1);
 }
+
+/* media Screen For Mobile Screen */
+@media only screen and (max-width: 600px) {
+  nav {
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8) 50%,
+        rgba(0, 0, 0, 0) 60%,
+        rgba(0, 0, 0, 0.8) 100%
+      ),
+      url("./img/background Image.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 33.4rem;
+  }
+  nav > div {
+    display: flex;
+    justify-content: space-between;
+    border: 0px solid yellow;
+    align-items: center;
+    padding: 10px 0;
+  }
+  div > img {
+    width: 100px;
+    margin-left: 20px;
+  }
+  nav > div > div {
+    border: 0px solid red;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+    width: 150px;
+  }
+
+  #selectBox > select {
+    width: 20px;
+    height: 8px;
+    font-size: 10px;
+  }
+  #selectBox {
+    padding: 2px;
+    width: 50px;
+  }
+  nav > div > div > button {
+    width: 60px;
+    height: 25px;
+    font-size: 12px;
+    padding: 2px;
+  }
+  #selectBox > svg {
+    width: 12px;
+  }
+  #middleBox {
+    border: 0px solid red;
+    padding: 10px;
+    margin-top: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 32.2rem;
+    color: white;
+  }
+  #middleBox > h1 {
+    color: white;
+    font-size: 25px;
+    border: 0px solid red;
+    width: 25.2rem;
+    font-weight: 800;
+  }
+}
